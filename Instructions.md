@@ -2,16 +2,20 @@
 Instuctions written by [@mniafi](https://github.com/mniafi/),
 Sensum by [@martinjanas](https://github.com/martinjanas/).
 
-From Installing Tools to Building DLL's
+__Disclaimer:__<br>
+The software is distributed as __source code only__
+
+From Installing Tools to Building DLL's<br>
 Host OS: Windows 10 Version 2004 _(19041.928)_
 ## Step 1 - Installing Visual Studio
 
 Go to [Microsoft's](https://sensum.page.link/visualstudio) webpage.
-Press on First __Free download__ button as shown on _Screenshot #1_:
+Press the "__Free download__" button on left as shown on _Screenshot #1_:<br>
+You want to download Visual Studio Community.
 
 >![Screen#1](https://snipboard.io/wM78Pg.jpg)
 
-Open installer and wait for installer shows up:
+Open the installer and wait until the installer shows up:
 
 >![screenshot#2](https://snipboard.io/A3SNfe.jpg)
 
@@ -26,13 +30,13 @@ Select __Desktop development with C++__ and click __Install__ :
 Now wait for installation...
 >![screenshot#5](https://snipboard.io/YpVBtJ.jpg)
 
-After Installation u will get this window:
+After installing You will get this window:
 >![screenshot#6](https://snipboard.io/BI7vnx.jpg)
 
 if you have Microsoft account u can __Sign In__.
 if not just click __Not now, maybe later__
 
-Next step, select _color theme_ , i use Dark one. Click on __Start Visual Studio__ :
+(Optional) Next step, select _color theme_ , i use dark one. Click on __Start Visual Studio__ :
 >![screenshot#7](https://snipboard.io/NxjFWY.jpg)
 
 After some time, VS will appear:
@@ -42,9 +46,9 @@ Close it with __X__.
 
 ## Step 2 - Downloading DirectX SDK
  
- Just Download this Package [DXSDK_Jun10.exe](https://sensum.page.link/directxsdk). _(572MB)_
+ Just download this package [DXSDK_Jun10.exe](https://sensum.page.link/directxsdk). _(572MB)_
 
- After download, run installer:
+ After downloading, run the installer:
  >![screenshot#8](https://snipboard.io/Vhp59A.jpg)
 
  Click __Next__ , Accept Terms in the license agreement:
@@ -62,7 +66,7 @@ Finish installation.
 
 ## Step 3 - Sensum
 
-First of all, Go to Original [Sensum Github](https://github.com/martinjanas/Sensum) for Latest Version.
+First of all, go to the original [Sensum Github](https://github.com/martinjanas/Sensum) for latest version.
 
 _version history on my [Github](https://github.com/mniafi/sensum) page_
 
@@ -72,7 +76,7 @@ MartiN's Github page:
 click on Green __code__ button and select __Download ZIP__
 >![screenshot#14](https://snipboard.io/nSU9q6.jpg)
 
-You will get file named: _Sensum-master.zip_ , extract to _Desktop_:
+You will get file named: _Sensum-master.zip_ , extract it to _Desktop_:
 >![screenshot#15](https://snipboard.io/5Q4n3N.jpg)
 
 Run __sensum.sln__ from folder you extracted:
@@ -92,33 +96,33 @@ to __Release x86__
 
 ### CPU Instruction Set
 
-By default, Sensum is configured for __SSE2__ Instruction set.
+By default, Sensum is configured for __SSE2__ Instruction set.<br>
 It's not neccessary to change but if you want to gain more performance,
-you can change it to __AVX, AVX2 or AVX512__.
-Every CPU have __different instruction set__.
-Check your CPU manual to make sure what of instruction set is using your CPU.
+You can change it to __AVX, AVX2 or AVX512__.<br>
+Every CPU has __different instruction set__.<br>
+Google your CPU to see what instruction set it supports.
 
-For Example, Host is working on __i7 3770 CPU__
+For example, host has __i7 3770 CPU__
 
 __Google__: i7 3770 and click on __intel's webpage__
 
 looks like this:
 >![screenshot#20](https://snipboard.io/GfRDlL.jpg)
 
-look up something like this:
+lookup for something like this:
 >![screenshot#21](https://snipboard.io/V3ZdU0.jpg)
 
 here you can see, that my CPU is using __SSE__ and __AVX__
 
 ### Project Configuration
-So i can enable __AVX__ in Source;
+So I can enable __AVX__ in Source;
 Go to __Project__ > __Properties__
 >![screenshot#22](https://snipboard.io/TJUYoX.jpg)
 
 Next go to __C++__ > __Code Generation__
 >![screenshot#23](https://snipboard.io/vBWmjV.jpg)
 
-Selecting __AVX__ becouse my CPU __SUPPORTS__ this
+Selecting __AVX__ because my CPU __SUPPORTS__ this
 >![screenshot#24](https://snipboard.io/6BDQb8.jpg)
 
 Click __OK__ button and window will close.
@@ -144,7 +148,7 @@ Congrats! __Sensum.dll__ builded!
 
 ## FAQ
 
-1. DirectX SDK Error while installation:
+1. DirectX SDK Error while installation:<br>
  1.1 [S1023 Error](https://docs.microsoft.com/en-us/troubleshoot/windows/win32/s1023-error-when-you-install-directx-sdk) Fix by Microsoft:
  
    >To resolve this issue, you must uninstall all versions of the Visual C++ 2010 Redistributable before installing the June 2010 DirectX SDK. You may have one or more of the following products installed:
@@ -157,5 +161,10 @@ You can use Add or Remove Programs in Control Panel to uninstall the products. O
  
    MsiExec.exe /passive /X {1D8E6291-B0D5-35EC-8441-6616F567A0F7}
    ```
-   After uninstalling the Microsoft Visual C++ 2010 Redistributable products, you may install the [DirectX Software Development Kit](https://www.microsoft.com/download/details.aspx?id=6812).
+   After uninstalling the Microsoft Visual C++ 2010 Redistributable products, you may install the [DirectX Software Development Kit](https://www.microsoft.com/download/details.aspx?id=6812), [VC Redist 2015-2019 x86](https://aka.ms/vs/16/release/vc_redist.x86.exe) and [VC Redist 2015-2019 x64](https://aka.ms/vs/16/release/vc_redist.x64.exe)
 
+2. Config Location for __Sensum__ is in "__C:\Sensum\configs\__"
+3. To make __skinchanger work__, put __skin_kits.json__ into "__C:\Sensum__"<br>
+
+[How to Create Issue Correctly](https://github.com/martinjanas/Sensum/issues/81) | [Developer Board (ToDo,In Progress)](https://github.com/martinjanas/Sensum/projects/1) | [Feature Request](https://github.com/martinjanas/Sensum/discussions/167)
+--|--|--
