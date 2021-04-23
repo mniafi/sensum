@@ -1,4 +1,6 @@
 # Sensum
+Installation [Instructions](https://github.com/mniafi/sensum/blob/main/Instructions.md) for Original [Sensum](https://github.com/martinjanas/sensum) by [@martinjanas](https://github.com/martinjanas)
+
 Backup of #sensum by @martinjanas<br/>
 **DLL IS BUILDED BY MARTINJANAS, Original filename:** Sensum.dll.<br/>
 Rename **bin** to **zip**, its just archive
