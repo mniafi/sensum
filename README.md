@@ -1,5 +1,5 @@
 # Sensum
-Installation [Instructions](https://github.com/mniafi/sensum/blob/main/Instructions.md) for Original [Sensum](https://github.com/martinjanas/sensum) by [@martinjanas](https://github.com/martinjanas)
+Deployment [Instructions](https://github.com/martinjanas/Sensum/blob/master/instructions.md) for Original [Sensum](https://github.com/martinjanas/sensum) by [@martinjanas](https://github.com/martinjanas)
 
 Backup of [Sensum](https://github.com/martinjanas/sensum) by [@martinjanas](https://github.com/martinjanas)<br/>
 **DLL IS BUILDED BY MARTINJANAS, Original filename:** Sensum.dll.<br/>
